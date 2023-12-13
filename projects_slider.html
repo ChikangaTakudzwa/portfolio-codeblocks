@@ -10,6 +10,7 @@
     }
     #project-description-top {
         min-height: 50%;
+        
     }
     #project-description-bottom {
         min-height: 50%;
@@ -23,17 +24,22 @@
     #project_ico > svg {
     height: 100% !important;
     }
+    #ul-slider {
+    	height: 660px !important; 
+        background-color: #1F2937; 
+        border-radius: 22px;
+    }
 </style>
 
-<div class="uk-position-relative uk-visible-toggle uk-light" style="min-height: 100% !important; padding-bottom: 4em;" tabindex="-1" uk-slideshow="animation: push">
+<div class="uk-position-relative uk-visible-toggle uk-light" style="min-height: 100% !important;" tabindex="-1" uk-slideshow="animation: push">
 
-    <ul class="uk-slideshow-items" style="height: 780px !important;">
-        <li>
+    <ul class="uk-slideshow-items" id="ul-slider" style="">
+        <li style="background-color: #1F2937;">
             <div class="uk-position-cover">
-                <div style="background-color: rgb(29, 29, 56); height: 100%; width: 100%;">
+                <div style="height: 100%; width: 100%;">
                     <div class="uk-child-width-expand@s" style="padding: 5em;" uk-grid>
                         <div>
-                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/mywebsite.png" alt="" style="min-height: 100%;" />
+                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/uiux.png.webp" alt="" style="min-height: 100%;" />
                         </div>
                         <div id="right-column">
                             <div id="project-description-top">
@@ -57,15 +63,15 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li style="background-color: #1F2937;">
             <div class="uk-position-cover">
-                <div style="background-color: rgb(29, 29, 56); height: 100%; width: 100%;">
+                <div style="height: 100%; width: 100%;">
                     <div class="uk-child-width-expand@s" style="padding: 5em;" uk-grid>
                         <div>
-                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/bx.PNG" alt="" style="min-height: 100%;" />
+                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/bx.PNG.webp" alt="" style="min-height: 100%;" />
                         </div>
                         <div id="right-column">
-                            <div id="project-description-top">
+                            <div id="project-description-top" >
                                 <h3>BrandXpert</h3>
                                 <p>
                                     This project involves crafting a user-friendly platform that empowers administrators 
@@ -99,12 +105,12 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li style="background-color: #1F2937;">
             <div class="uk-position-cover">
-                <div style="background-color: rgb(29, 29, 56); height: 100%; width: 100%;">
+                <div style="height: 100%; width: 100%;">
                     <div class="uk-child-width-expand@s" style="padding: 5em;" uk-grid>
                         <div>
-                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/SQLGen.PNG" alt="" style="min-height: 100%;" />
+                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/SQLGen.jpg.webp" alt="" style="min-height: 100%;" />
                         </div>
                         <div id="right-column">
                             <div id="project-description-top">
@@ -139,12 +145,12 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li style="background-color: #1F2937;">
             <div class="uk-position-cover">
-                <div style="background-color: rgb(29, 29, 56); height: 100%; width: 100%;">
+                <div style="height: 100%; width: 100%;">
                     <div class="uk-child-width-expand@s" style="padding: 5em;" uk-grid>
                         <div>
-                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/mobile_shop_new_portfolio.jpeg" alt="" style="min-height: 100%;" />
+                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/e-comm.jpeg.webp" alt="" style="min-height: 100%;" />
                         </div>
                         <div id="right-column">
                             <div id="project-description-top">
@@ -182,12 +188,12 @@
                 </div>
             </div>
         </li>
-        <li>
+        <li style="background-color: #1F2937;">
             <div class="uk-position-cover">
-                <div style="background-color: rgb(29, 29, 56); height: 100%; width: 100%;">
+                <div style="height: 100%; width: 100%;">
                     <div class="uk-child-width-expand@s" style="padding: 5em;" uk-grid>
                         <div>
-                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/resumeforge.PNG" alt="" style="min-height: 100%;" />
+                            <img src="https://ivesexid.sirv.com/Portfolio/new_portfolio/projects/resumeforge.jpg.webp" alt="" style="min-height: 100%;" />
                         </div>
                         <div id="right-column">
                             <div id="project-description-top">
@@ -197,13 +203,7 @@
                                     that includes Bubble.io, Express, Node.js, and harnesses the capabilities of the OpenAI API. This 
                                     application redefines the resume creation process by seamlessly transforming user-submitted data into
                                     compelling and professional resume content
-                                    <br/>
-                                    <br/>
-                                    At the heart of Resumeforge is a user-friendly form where individuals input their relevant information.
-                                    Leveraging the prowess of natural language processing algorithms, the application goes beyond 
-                                    conventional resume builders. It intelligently interprets the user's input to generate a customized 
-                                    resume that not only showcases skills, experience, and accomplishments but also crafts them into a
-                                    narrative that resonates professionally.
+                                   
                                     <br/>
                                     <br/>
                                     Powered by Bubble.io for a dynamic and interactive user interface, Express and Node.js ensure a robust 
@@ -233,6 +233,7 @@
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
 
 </div>
+
 
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
