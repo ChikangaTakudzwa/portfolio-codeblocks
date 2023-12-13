@@ -1,0 +1,62 @@
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
+
+<style>
+    #js-progressbar::-webkit-progress-value {
+        background-color: red;
+        margin: 0 !important;
+    }
+    #js-progressbar {
+        margin: 0 !important;
+        border-radius: 0 !important;
+        height: 4px !important;
+    }
+    #progress {
+        min-width: 100%; 
+        margin-top: 8px;
+    }
+    #text {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+    }
+</style>
+
+<div style="min-width: 100% ;">
+    <div style="display: flex; " uk-grid>
+        <div style="width: 50%; display: flex; justify-content: flex-start;">
+            <h2 id="text">UI/UX</h2>
+        </div>
+        <div style="width: 50%; display: flex; justify-content: flex-end;">
+            <h2 id="text">53%</h2>
+        </div>
+    </div>
+    <progress id="js-progressbar" class="uk-progress" value="53" max="100" style="min-width: 100%;" style="color: brown;"></progress>
+</div>
+<div id="progress">
+    <div style="display: flex; " uk-grid>
+        <div style="width: 50%; display: flex; justify-content: flex-start;">
+            <h2 id="text">FRONT-END</h2>
+        </div>
+        <div style="width: 50%; display: flex; justify-content: flex-end;">
+            <h2 id="text">57%</h2>
+        </div>
+    </div>
+    <progress id="js-progressbar" class="uk-progress" value="57" max="100" style="min-width: 100%;" style="color: brown;"></progress>
+</div>
+<div id="progress">
+    <div style="display: flex; " uk-grid>
+        <div style="width: 50%; display: flex; justify-content: flex-start;">
+            <h2 id="text">BACK-END</h2>
+        </div>
+        <div style="width: 50%; display: flex; justify-content: flex-end;">
+            <h2 id="text">70%</h2>
+        </div>
+    </div>
+    <progress id="js-progressbar" class="uk-progress" value="70" max="100" style="min-width: 100%;" style="color: brown;"></progress>
+</div>
+
+

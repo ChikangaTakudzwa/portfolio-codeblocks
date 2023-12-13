@@ -1,0 +1,65 @@
+
+<script>
+    // Define a function to load multiple scripts
+    function loadScripts(urls, callback) {
+        var loadedCount = 0;
+        function loadScript(url) {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            script.onload = function () {
+                loadedCount++;
+                if (loadedCount === urls.length) {
+                    // All scripts are loaded
+                    callback();
+                }
+            };
+            document.head.appendChild(script);
+        }
+        // Load each script in the array
+        for (var i = 0; i < urls.length; i++) {
+            loadScript(urls[i]);
+        }
+    }
+    // Define a function to load multiple styles
+    function loadStyles(urls, callback) {
+        var loadedCount2 = 0;
+        function loadStyle(url) {
+            const my_style = document.createElement('link');
+            my_style.type = 'text/css';
+            my_style.rel = 'stylesheet';
+            my_style.src = url;
+            my_style.onload = function () {
+                loadedCount2++;
+                if (loadedCount2 === urls.length) {
+                    // All styles are loaded
+                    callback();
+                }
+            };
+            document.head.appendChild(my_style);
+        }
+        // Load each style in the array
+        for (var i = 0; i < urls.length; i++) {
+            loadStyles(urls[i]);
+        }
+    }
+
+    var scriptUrls = [
+        'https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js',
+        'https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js',
+    ];
+
+    var styleUrls = [
+        'https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css',
+        'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap',
+    ];
+
+    // Call the loadScripts function with the array of URLs
+
+    loadScripts(scriptUrls, function () {
+        console.log('All scripts loaded!');
+    });
+    loadScripts(styleUrls, function () {
+        console.log('All styles loaded!');
+    });
+</script>
